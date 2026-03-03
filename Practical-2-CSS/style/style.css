@@ -1,0 +1,23 @@
+body{
+    background: #cef4f1;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+}
+p{
+    word-spacing: inherit;
+}
+h2{
+    color: blue;
+    text-align: start;
+}
+
+img{
+    width: 300px;
+}
+ul{
+    color: crimson;
+}
+blockquote{
+    font-style: italic;
+}
