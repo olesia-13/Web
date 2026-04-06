@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;
+}
+header a{
+    color: #0f0f0f;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 20px;
+}
+.logo-icon{
+    background: linear-gradient(#ba49f1, #e83fac);
+    padding: 10px;
+    border-radius: 50%;
+}
+.logo-title{
+    font-weight: 400;
+}
+nav ul{
+    display: flex;
+    column-gap: 30px;
+}
+nav ul li a:hover{
+    color: #a527ed;
+}
+
+.header-top-btn{
+    display: flex;
+    column-gap: 15px;
+}
+.header-top-btn button{
+    border: none;
+    padding: 10px;
+    background: transparent;
+    border-radius: 10px;
+}
+.header-top-btn button:hover{
+    background: #eaeaea;
+}
+.header-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 0;
+    color: #ffff;
+    background: linear-gradient(135deg, #9d1bf7, #f4339c, #ff890f);
+    row-gap: 20px;
+}
+.header-bottom h1{
+    font-size: 60px;
+    font-weight: 550;
+    width: 770px;
+    line-height: 60px;
+    text-align: center;
+}
+.header-bottom p{
+    font-size: 20px;
+    width: 770px;
+    text-align: center;
+    font-weight: 350;
+}
+.header-bottom-btn button{
+    background: #ffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #a527ed;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+#btn-hover{
+    color: transparent;
+}
+#btn-hover:hover{
+    background: transparent;
+    outline: 1px solid #fff;
+    color: #0f0f0f;
+}
+.advantages{
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0;
+    column-gap: 30px;
+    text-align: center;
+}
+.advantages article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages article span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: #f4e8ff;
+    border-radius: 50%;
+    color: #881fd4;
+    margin-bottom: 16px;
+}
+.advantages article h3{
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.advantages article p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #5a5859
+}
+.catalog{
+    display: flex;
+    flex-direction: column;
+    padding: 65px 0;
+    align-items: center;
+}
+.catalog-cards{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 30px;
+}
+.card{
+    border: 1px solid #dbdbdb;
+    border-radius: 15px;
+    max-width: 350px;
+}
+.card:hover{
+    box-shadow: 0 2px 5px #707070;
+}
+.card img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 20px;
+}
+.catalog h2{
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.catalog > p{
+    font-size: 16px;
+    line-height: 24px;
+    color:#5a5859;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.label{
+    font-size: 12px;
+    line-height: 16px;
+    color: #881fd4;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.card-text{
+    padding: 16px;
+}
+.card-text h3{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.card-text p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color:#5a5859;
+    margin-bottom: 10px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.cost{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #881fd4;
+}
+.instock{
+    font-size: 12px;
+    line-height: 26px;
+    color: #438152;
+}
+.card-btn{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    background: #881fd4;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.card-btn:hover{
+    background: #660ca8;
+}
+.catalog > button{
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    background: #881fd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.catalog > button:hover{
+    background: #660ca8;
+}
