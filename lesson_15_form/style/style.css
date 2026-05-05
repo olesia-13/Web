@@ -1,17 +1,385 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     font-family: "Inter", sans-serif;
 }
+
 body{
-    background: #fefeff;
+    background: #f3f8ff;
 }
 .wrapper{
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
-    padding: 30px 20px;
+    margin: 40px auto;
+    padding: 32px;
+    background: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+header h1{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 550;
+    color: #3a4df8;
+}
+.first-title{
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+    margin-bottom: 8px;
+}
+.second-title{
+    font-size: 14px;
+    line-height: 24px;
+    color: #667085;
+}
+.personal-data{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    background: #eff3ff;
+}
+.personal-data h2{
+    font-size: 20px;
+    line-height: 30px;
+    color: #2b2f75;
+    font-weight: 550;
+}
+.forms-personal{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 15px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.forms-personal label{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2e3163;
+    font-weight: 550;
+}
+.forms-personal label input{
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #c2c5cc;
+    outline: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #c2c5cc;
+}
+.forms-personal label input:focus{
+    border: 1px solid #3a4df8;
+}
+.professional-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    background: #f7f4fd;
+}
+.professional-info h2{
+    font-size: 20px;
+    line-height: 30px;
+    color: #2b317d;
+    font-weight: 550;
+}
+.forms-professional{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 15px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.forms-professional label{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2e3163;
+    font-weight: 550;
+}
+.forms-professional label input{
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #c2c5cc;
+    outline: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #c2c5cc;
+}
+.forms-professional label select option{
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #c2c5cc;
+    outline: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #c2c5cc;
+}
+.forms-professional label select{
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #c2c5cc;
+    outline: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #232323;
+}
+.technology-label{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2e3163;
+    font-weight: 550;
+}
+.technology-label input{
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #c2c5cc;
+    outline: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #c2c5cc;
+}
+.additional-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    background: #fcf2fa;
+}
+.additional-info h2{
+    font-size: 20px;
+    line-height: 30px;
+    color: #59168a;
+    font-weight: 550;
+}
+.forms-additional{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 15px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.forms-additional label{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2e3163;
+    font-weight: 550;
+}
+.forms-additional label input{
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #c2c5cc;
+    outline: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #c2c5cc;
+}
+.resume-label{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2e3163;
+    font-weight: 550;
+}
+.resume-label input{
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #c2c5cc;
+    outline: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #535353;
+    background: white;
+}
+.about-me{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2e3163;
+    font-weight: 550;
+}
+.about-me textarea{
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #c2c5cc;
+    outline: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #535353;
+    background: white;
+}
+.agree{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    background: #f9fafc;
+}
+.agree label{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #515151;
+    font-weight: 550;
+}
+.agree label input{
+    padding: 12px 16px;
+}
+button{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 16px 32px;
+    border-radius: 20px;
+    background: #3a4df8;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 24px;
+    color: #304487;
+    background: #eff6ff;
+    border: 1px solid #afb5cf;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 32px;
+}
+footer h2{
+    font-size: 18px;
+    line-height: 27px;
+    color: #304487;
+    font-weight: 550;
+    margin-bottom: 8px;
+}
+
+footer ol li{
+    font-size: 14px;
+    line-height: 20px;
+    color: #304487;
+    margin-bottom: 8px;
+}
+label input:focus{
+    border: 1px solid #3a4df8;
+}
+label input:hover{
+    border: 1px solid #505050;
 }
